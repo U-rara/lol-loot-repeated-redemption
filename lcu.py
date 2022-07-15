@@ -5,7 +5,7 @@ connector = Connector()
 @connector.ready
 async def connect(connection):
     print('LCU API is ready to be used.')
-    summoner = await connection.request('post', '/lol-loot/v1/recipes/MATERIAL_536_FORGE_2/craft',json=['MATERIAL_536'])
+    summoner = await connection.request('post', '/lol-loot/v1/recipes/MATERIAL_548_FORGE_2/craft',json=['MATERIAL_548'])
     json = await summoner.json()
     print(json)
     f2 = open('output.json', 'w')
